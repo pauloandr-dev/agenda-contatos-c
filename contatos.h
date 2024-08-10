@@ -3,5 +3,6 @@
 
 void adicionarContato();
 void listarContatos();
+void removerContato();
 
 #endif
