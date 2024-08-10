@@ -7,7 +7,8 @@ int main() {
         printf("\nAgenda de Contatos\n");
         printf("1. Adicionar Contato\n");
         printf("2. Listar Contatos\n");
-        printf("3. Sair\n");
+        printf("3. Remover Contato\n");
+        printf("4. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
 
@@ -19,12 +20,15 @@ int main() {
                 listarContatos();
                 break;
             case 3:
+                removerContato();
+                break;
+            case 4:
                 printf("Saindo...\n");
                 break;
             default:
                 printf("Opcao invalida!\n");
         }
-    } while(opcao != 3);
+    } while(opcao != 4);
 
     return 0;
 }
