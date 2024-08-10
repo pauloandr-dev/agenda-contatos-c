@@ -23,3 +23,20 @@ void listarContatos() {
         printf("%d. %s\n", i + 1, listaDeContatos[i]);
     }
 }
+
+void removerContato() {
+    int indice;
+    listarContatos();
+    printf("Digite o número do contato que deseja remover: ");
+    scanf("%d", &indece);
+
+    if(indice > 0 &&indice <=totalContatos) {
+        for (int i = indice -1; i < totalContatos - 1; i++) {
+            strcpy(listaDeContatos[i], listadeContatos[i +1]);
+            }
+        totalContatos--;
+        printf("Contato removido com sucesso!\n");
+        } else {
+            printf("Índice inválido!\n")        
+        }
+    }
